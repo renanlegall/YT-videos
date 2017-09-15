@@ -27,5 +27,7 @@ module YtVideosV3
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.active_record.observers = :video_observer
   end
 end
